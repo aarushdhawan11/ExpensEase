@@ -73,7 +73,7 @@ To get a local copy up and running follow these simple steps:
 - **Add Income/Expenses:** Manage your finances by adding income or expense details.
 - **Analyze Data:** Visualize spending patterns with charts and graphs.
 - **Export Data:** Download your financial data for further analysis.
-- 
+
 ### Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
