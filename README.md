@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/ExpensEase.git
+   git clone https://github.com/aarushdhawan11/ExpensEase.git
    
 2. **Navigate to the project directory:**
    ```bash
@@ -87,7 +87,7 @@ Contributions are what make the open-source community such an amazing place to l
 Distributed under the MIT License. See LICENSE for more information.
 
 ### Contact
-For any questions or feedback, feel free to reach out at **Email:** aakashjainonline18@gmail.com or **Linkedin:** https://www.linkedin.com/in/aakash-jain-/
+For any questions or feedback, feel free to reach out at **Email:** aarushdhawan25@gmail.com or **Linkedin:** https://www.linkedin.com/in/aarush-dhawan-2866a8309/
 
 ### Acknowledgements
 - MongoDB Documentation
