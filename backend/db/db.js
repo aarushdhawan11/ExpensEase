@@ -1,14 +1,22 @@
 const mongoose = require("mongoose");
 
-const db = async () =>{
-    try{
-        mongoose.set('strictQuery', false)
-        await mongoose.connect("mongodb+srv://aakasshhh:^vvrulc2q@noteapp.pxzl6.mongodb.net/?retryWrites=true&w=majority&appName=Noteapp")
+const db = async () => {
+    try {
+        mongoose.set('strictQuery', false);
+
+        // Adding options for connection
+        const options = {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            serverSelectionTimeoutMS: 30000, // Increased timeout to 30 seconds
+            socketTimeoutMS: 45000 // Set socket timeout to 45 seconds
+        };
+
+        await mongoose.connect(process.env.MONGO_URL, options);
         console.log("Database Connected");
-    } catch(error){
-        console.log("Database Connection Error");
+    } catch (error) {
+        console.error("Database Connection Error:", error);
     }
+};
 
-}
-
-module.exports = {db}
+module.exports = { db };
