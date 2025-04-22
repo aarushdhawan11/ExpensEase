@@ -17,7 +17,7 @@ function Signup() {
         console.log(password)
         console.log(email)
         console.log(name)
-        let res = await fetch("http://localhost:5000/api/v1/signup", {
+        let res = await fetch("https://expensease-backend.onrender.com/api/v1/signup", {
             method: "POST",
             mode: "cors",
             headers: {
@@ -30,6 +30,7 @@ function Signup() {
                 password,
             }),
         });
+        
 
         let data = await res.json();
         console.log(data);
