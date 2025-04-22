@@ -12,7 +12,7 @@ const db = async () => {
             socketTimeoutMS: 45000 // Set socket timeout to 45 seconds
         };
 
-        await mongoose.connect(process.env.MONGO_URL, options);
+        await mongoose.connect("mongodb+srv://aarushdhawan25:^vvrulc2q@cluster0.qkesk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", options);
         console.log("Database Connected");
     } catch (error) {
         console.error("Database Connection Error:", error);
