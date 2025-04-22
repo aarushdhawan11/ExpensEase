@@ -10,7 +10,7 @@ function Login({ onLogin }){
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('https://expensease-backend.onrender.com/api/v1/login', {
+            const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/v1/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
